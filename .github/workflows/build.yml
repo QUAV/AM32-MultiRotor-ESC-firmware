@@ -42,7 +42,7 @@ jobs:
           echo "ARTIFACT_NAME=${ARTIFACT_NAME}" >> $GITHUB_ENV
 
       - name: Build All Targets
-        run: make AM32REF
+        run: make FLYCOLOR
 
       - name: Upload Bin Files
         uses: actions/upload-artifact@v2
